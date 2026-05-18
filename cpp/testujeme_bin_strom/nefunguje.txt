@@ -1,0 +1,3 @@
+cpp proste nejde nainstalovat protoze bych potreboval nejaky xcode hovna
+linux for ever
+w

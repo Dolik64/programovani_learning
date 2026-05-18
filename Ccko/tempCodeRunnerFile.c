@@ -1,0 +1,1 @@
+fprintf(stderr,"Error: Nedefinovany vysledek!\n");

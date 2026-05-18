@@ -1,0 +1,1 @@
+print("jirka je borec")

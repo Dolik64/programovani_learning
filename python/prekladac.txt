@@ -1,0 +1,10 @@
+auto car voiture
+ulice street rue
+okno window fenetre
+dum house maison
+vychod exit sortie
+darek present cadeau
+kocka cat chat
+pes dog chien
+voda water leau
+kniha book livre

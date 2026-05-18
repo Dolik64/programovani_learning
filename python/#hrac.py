@@ -1,0 +1,22 @@
+#hrac
+#payoff_matrix = výplatní_matice = payoff matice
+#https://cs.wikipedia.org/wiki/V%C4%9Bz%C5%88ovo_dilema
+import random
+class MyPlayer:
+    def __init__(self, payoff_matrix, number_of_iterations=None):
+        self.payoff_matrix = payoff_matrix
+        self.number_of_iterations = number_of_iterations
+
+    
+        
+    def move(self):
+        tah = random.randint(0,1)
+        if tah == 0:
+            return True
+        elif tah == 1:
+            return False
+        
+    def record_last_moves(self, my_last_move, opponent_last_move):
+        self.my_last_move = my_last_move
+        self.opponent_last_move = opponent_last_move
+

@@ -1,0 +1,9 @@
+Ccko teorie
+
+pojmy
+double float
+prezentace je super
+ke kazdemu ukolu je video tutorial
+KNE 205 Druhe patro Karlak jsou kazdy ctvrtek konzultace hned po prednasce
+
+In C, double is a data type that represents double-precision floating-point numbers. It is used to store real numbers (floating-point numbers) with a higher degree of precision compared to the float data type.

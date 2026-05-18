@@ -1,0 +1,7 @@
+Ano, dá se říct, že na Linuxu je práce s OpenMP jednodušší. 
+Na Linuxu většina distribucí obsahuje kompilátor GCC, který má nativní podporu pro OpenMP 
+– stačí použít příznak -fopenmp a vše funguje “out of the box”. Na macOS je situace 
+komplikovanější, protože výchozí kompilátor Clang nepodporuje OpenMP bez dodatečné 
+instalace knihovny libomp a následného ručního nastavení cest k hlavičkám a knihovnám.
+
+Máte tedy na Linuxu menší konfigurační náročnost, což může vývoj s OpenMP urychlit.

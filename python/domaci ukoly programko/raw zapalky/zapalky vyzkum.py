@@ -1,0 +1,214 @@
+from tkinter import *
+
+import random
+
+from tkinter import messagebox
+
+
+pocet = random.randint(20, 30)
+
+pocatek = pocet
+
+limit = 0
+
+odber = 0
+
+
+okno = Tk()
+
+okno.title("Zápalky")
+
+okno.geometry("700x200")
+
+
+# když se klikne na zápalku
+
+
+def klik(i):
+
+    global limit
+
+    # hlídá se maximum odebraných zápalek
+
+    if True:
+
+        #  if pocatek - pocet <= 3:
+
+        if limit < 3:
+
+            zapalky[i].destroy()
+
+            global pocet
+
+            pocet = pocet - 1
+
+            lbl_popis.config(text="Na stole je " + str(pocet) + " zápalek")
+
+            limit = limit + 1
+
+        if pocet == 0:
+            messagebox.showinfo("vyhral jsi", "Vyhral jsi")
+
+        else:
+
+            messagebox.showinfo(
+                "Jiz si hral trikrat, ukonci prosim tah",
+                "Jiz si hral trikrat, ukonci prosim tah",
+            )
+
+
+def pryc(i):
+
+    global pocet
+
+    if True:
+
+        # zapalky[0].destroy()
+
+        #  pocet = pocet -1
+        # print(pocet)
+        print(len(zapalky))
+        zapalky[i].destroy()
+        print(len(zapalky))
+
+    #  odber = odber + 1
+
+    # print(pocet)
+
+
+# tah počítače
+
+
+def hraje_pocitac():
+
+    global limit
+
+    global pocet
+
+    if True:
+
+        if limit == 0:
+
+            messagebox.showinfo("hraj", "musis alespon jednu zapalku ubrat")
+
+        else:
+
+            limit = 0
+
+            # print(pocet)
+
+			if pocet % 4 == 0:
+
+				# zapalky[i].destroy()
+
+				# pocet = pocet -1
+
+				pryc(pocet)
+
+				pocet = pocet - 1
+
+				lbl_popis.config(text="Na stole je " + str(pocet) + " zápalek")
+
+				if pocet == 0:
+					messagebox.showinfo("prohral jsi", "prohral jsi")
+
+			# print("beru zapalku")
+
+			elif pocet % 4 == 3:
+
+				"""for k in range(3):
+
+				pryc(0)
+
+				pocet = pocet -1
+
+				lbl_popis.config(text="Na stole je "+str(pocet)+" zápalek")
+
+				"""
+
+				pryc(pocet)
+
+				pocet = pocet - 1
+
+				lbl_popis.config(text="Na stole je " + str(pocet) + " zápalek")
+
+				pryc(pocet)
+
+				pocet = pocet - 1
+
+				lbl_popis.config(text="Na stole je " + str(pocet) + " zápalek")
+
+				pryc(pocet)
+
+				pocet = pocet - 1
+
+				lbl_popis.config(text="Na stole je " + str(pocet) + " zápalek")
+
+				if pocet == 0:
+					messagebox.showinfo("prohral jsi", "prohral jsi")
+
+			elif pocet % 4 == 2:
+
+				for k in range(2):
+
+					pryc(pocet)
+
+					pocet = pocet - 1
+
+					lbl_popis.config(text="Na stole je " + str(pocet) + " zápalek")
+
+				if pocet == 0:
+					messagebox.showinfo("prohral jsi", "prohral jsi")
+
+			elif pocet % 4 == 1:
+
+				for k in range(1):
+
+					pryc(pocet)
+
+					pocet = pocet - 1
+
+					lbl_popis.config(text="Na stole je " + str(pocet) + " zápalek")
+
+				if pocet == 0:
+					messagebox.showinfo("prohral jsi", "prohral jsi")
+
+        # pass
+
+
+# komponenty v okně:
+
+lbl_popis = Label(okno, text="Na stole je " + str(pocet) + " zápalek", font=("Arial", 12))
+
+lbl_popis.pack()
+
+
+btn_konec_tahu = Button(okno, text="Konec tahu", command=hraje_pocitac)
+
+btn_konec_tahu.pack()
+
+
+zapalky = []
+
+for i in range(pocet):
+
+    btn_zapalka = Button(
+        okno, background="white", width="2", height="6", command=lambda z=i: klik(z)
+    )
+
+    btn_zapalka.pack(side="left")
+
+    zapalky.append(btn_zapalka)
+
+    #  test = pocet + 1
+
+
+# icko = Label(okno, text=str(i))
+
+# icko.pack()
+
+
+okno.mainloop()
+
+
+# tohle je posledni verze zapalek

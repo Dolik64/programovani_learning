@@ -1,0 +1,10 @@
+jirka@MacBook-Pro-10 cpp kompilator % whereis g++                     
+whereis clang++
+g++: /usr/bin/g++
+clang++: /usr/bin/clang++ /Library/Developer/CommandLineTools/usr/share/man/man1/clang++.1
+jirka@MacBook-Pro-10 cpp kompilator % 
+
+
+
+g++ -std=c++11 kompilujem.cpp -o kompilujem
+./kompilujem
