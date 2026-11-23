@@ -1,0 +1,16 @@
+./a.out < pub01.in
+
+
+Pane kolego,
+
+na vyřešení úkolu s robotickou žábou je potřeba aplikovat průchod grafem 
+do šířky (BFS). Jako materiály lze použít slidy 4. přednášky:
+https://cw.fel.cvut.cz/wiki/courses/b4b33alg/prednasky
+nebo tyto stránky:
+https://ksp.mff.cuni.cz/kucharky/grafy/
+Důležité je ošetřit, že na políčko mřížky se žába může opakovaně vracet, 
+pokud se pohybuje jiným směrem a/nebo jinou rychlostí. Do fronty proto 
+nestačí ukládat jen uzly (políčka mřížky), ale také zmíněné atributy.
+
+S pozdravem,
+Daniel Průša

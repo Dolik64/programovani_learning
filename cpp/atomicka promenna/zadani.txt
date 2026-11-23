@@ -1,0 +1,21 @@
+ 2. domácí úloha: Paralelizace pomocí OpenMP #
+
+    Předloha: pdv-02openmp.zip
+    Do BRUTE odevzdávejte zip archiv obsahující soubor vector_sum.cpp.
+
+Ve 3. týdnu jsme se seznámili se základy OpenMP. V 2. domácí úloze si budete moct vyzkoušet, že úspěšnost různých způsobů paralelizace závisí do značné míry na vstupních datech. Pro efektivní zvýšení výkonu byste měli svoji implementaci uzpůsobit dostupným znalostem o vstupních datech.
+
+V této úloze budete postupně pomocí OpenMP implementovat 4 metody s rozdílným přístupem k paralelizaci. Každá metoda dostane na vstup datovou sadu (parametr data), složenou z vektorů náhodně generovaných čísel. Vaším úkolem je čísla v každém vektoru sečíst a tento součet uložit do vektoru solution na index odpovídající pořadí vektoru, který jste sčítali.
+
+Při implementaci můžete vycházet ze sekvenční implementace v souboru vector_sum.h. Vaši implementaci budeme porovnávat s referenčním řešením. Vy budete implementovat metody v souboru vector_sum.cpp. Tam rovněž naleznete přesný popis toho, co po Vás chceme.
+
+Popis jednotlivých datových sad s otázkami k zamyšlení naleznete v souboru main.cpp. Datové sady jsou celkem 4. U každé datové sady je popsáno, jaké výsledky v porovnání s ostatními implementacemi očekáváme. Za úspěšné vyřešení datové sady považujeme to, že výsledek, který vrátí vámi implementovaná metoda je správný a čas exekuce odpovídá časům referenčního řešení.
+
+Popis jednotlivých datových sad:
+
+    Sada, která obsahuje malý počet velmi dlouhých vektorů
+    Sada, kde délky vektorů mají velký rozptyl
+    Sada, která obsahuje velký počet vektorů malé konstantní velikosti
+    Sada, která je nevhodná k paralelizaci
+
+Body můžete získat za vyřešení prvních tří datových sad a to následovně: za vyřešení jedné dostanete 0.5 bod, pokud budou správně 2, budete mít 1 bod. Za vyřešení všech tří získáte 2 body.

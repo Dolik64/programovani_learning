@@ -1,0 +1,3 @@
+ucim se programovat paralelne v cpp, uz umim udelat atomickou promennou ale chtel bych se posunout dal, chci po tobe abych ti sdelil svuj cil co chci umet naprogramovat a tys mi dal vzdy vyklad problematiky a pak cviceni kde se naucim 
+naimplementovat danou problematiku, tech problematik muze byt vic podle toho kolik je potreba 
+zvladnou temat pred tim nez budu pripraven naprogramovat ukol

@@ -1,0 +1,22 @@
+ty hovado se podivas na video o bvs abys vubec chapal ktera bije
+
+chat ti doporucil nejaka videa
+
+Binary Search Trees - Full Course on FreeCodeCamp
+https://www.youtube.com/watch?v=COZK7NATh4k
+
+
+ani kamzici ani lazy delete chat nedokaze naprogramovat
+
+
+insert(root, 4);
+    insert(root, 2);
+    insert(root, 1);
+    insert(root, 3);
+    insert(root, 6);
+    insert(root, 5);
+    lazy_delete(root, 4);
+    lazy_delete(root, 6);
+
+
+    print node data se vypsalo desetkrat jen kvuli tomu, ze compact vola funkci insert
